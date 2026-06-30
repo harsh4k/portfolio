@@ -12,7 +12,7 @@ export default function Hero() {
     <section
       ref={containerRef}
       id="hero"
-      className="paper-grid relative min-h-[92vh] overflow-hidden px-4 py-8 text-[#161513] select-none sm:px-6 md:px-12"
+      className="paper-grid relative min-h-[92vh] overflow-x-hidden px-4 py-8 text-[#161513] select-none sm:px-6 md:px-12"
     >
       <div className="pointer-events-none absolute right-[8vw] top-20 hidden h-52 w-44 diagonal-hatch opacity-80 md:block" />
       <div className="pointer-events-none absolute bottom-12 left-[6vw] hidden h-28 w-28 rounded-full border border-[#161513]/20 md:block" />
@@ -35,7 +35,7 @@ export default function Hero() {
         <div className="relative z-20 flex flex-col justify-center gap-4 lg:col-span-4">
           <motion.div
             style={{ y: imageY }}
-            className="relative overflow-hidden rounded-[28px] border-[10px] border-[#161513] bg-[#11110F] p-3 shadow-[18px_18px_0_#F13A18]"
+            className="relative overflow-hidden rounded-[28px] border-[10px] border-[#161513] bg-[#11110F] p-3 shadow-[18px_18px_0_#F13A18] max-lg:!transform-none"
           >
             <div className="mb-3 flex items-center justify-between rounded-full border border-[#EEE9DC]/20 px-3 py-2 font-mono text-[9px] uppercase tracking-[0.18em] text-[#EEE9DC]/75">
               <span>Personal OS</span>
@@ -57,7 +57,13 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <div className="grid gap-4 border-t border-[#161513]/15 pt-5 sm:grid-cols-3 lg:col-span-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="grid gap-4 border-t border-[#161513]/15 pt-5 sm:grid-cols-3 lg:col-span-12"
+        >
           <div className="rounded-3xl bg-[#161513] p-5 text-[#EEE9DC]">
             <Code2 className="mb-6 h-5 w-5 text-[#C9FF3D]" />
             <p className="font-display text-2xl uppercase leading-none">Currently exploring</p>
@@ -86,7 +92,7 @@ export default function Hero() {
               <ArrowUpRight className="h-7 w-7 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </span>
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

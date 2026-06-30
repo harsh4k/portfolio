@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 import { ArrowUpRight, Copy, Github, Globe, Instagram, MapPin } from "lucide-react";
 
 export default function Contact() {
@@ -39,7 +40,7 @@ export default function Contact() {
   return (
     <footer
       id="contact"
-      className="dark-grid relative min-h-screen overflow-hidden border-t border-[#EEE9DC]/10 px-4 py-8 text-[#EEE9DC] select-none sm:px-6 md:px-12"
+      className="dark-grid relative min-h-screen overflow-x-hidden border-t border-[#EEE9DC]/10 px-4 py-8 text-[#EEE9DC] select-none sm:px-6 md:px-12"
     >
       <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-[1600px] flex-col justify-between gap-12">
         <div className="flex items-start justify-between border-b border-[#EEE9DC]/10 pb-5 font-mono text-[10px] uppercase tracking-[0.2em] text-[#EEE9DC]/50">
@@ -50,7 +51,13 @@ export default function Contact() {
             </span>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end"
+        >
           <div>
             <p className="mb-4 inline-flex rounded-full bg-[#C9FF3D] px-4 py-2 font-mono text-[10px] uppercase tracking-[0.16em] text-[#161513]">
               Open to opportunities
@@ -75,12 +82,18 @@ export default function Contact() {
               className="mt-8 flex w-full items-center justify-between rounded-full bg-[#EEE9DC] px-5 py-4 font-mono text-[10px] uppercase tracking-[0.16em] text-[#161513] transition-transform hover:-translate-y-1"
             >
               {copied === "email" ? "Email copied" : "Say hello"}
-              <Copy className="h-4 w-4" />
+                <Copy className="h-4 w-4" />
             </button>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="grid gap-3 border-t border-[#EEE9DC]/10 pt-5 sm:grid-cols-2 lg:grid-cols-3">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="grid gap-3 border-t border-[#EEE9DC]/10 pt-5 sm:grid-cols-2 lg:grid-cols-3"
+        >
           {socialLinks.map((link) => {
             const Icon = link.icon;
             const isCopied = copied === link.label;
@@ -123,15 +136,21 @@ export default function Contact() {
               </a>
             );
           })}
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col justify-between gap-4 border-t border-[#EEE9DC]/10 pt-6 pb-4 font-mono text-[9px] uppercase tracking-[0.18em] text-[#EEE9DC]/42 sm:flex-row">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col justify-between gap-4 border-t border-[#EEE9DC]/10 pt-6 pb-4 font-mono text-[9px] uppercase tracking-[0.18em] text-[#EEE9DC]/42 sm:flex-row"
+        >
           <span>Designed and coded by Harshit Chauhan</span>
           <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-left hover:text-[#EEE9DC]">
             Back to top
           </button>
           <span>2026 portfolio system</span>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );

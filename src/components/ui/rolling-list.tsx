@@ -19,14 +19,14 @@ function RollingTextItem(props: RollingTextItemProps & { key?: React.Key }) {
   const { item } = props;
   return (
     <div className="group relative w-full cursor-pointer border-b border-[#161513]/12 py-6 last:border-b-0">
-      <div className="relative overflow-hidden max-md:h-auto h-[60px] md:h-20">
-        <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] max-md:translate-y-0 md:group-hover:-translate-y-1/2">
+      <div className="relative overflow-hidden h-[60px] md:h-20">
+        <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] md:group-hover:-translate-y-1/2">
           <div className="h-[60px] md:h-20 flex items-center">
             <h2 className="text-5xl md:text-7xl font-display uppercase tracking-tighter text-[#161513]">
               {item.title}
             </h2>
           </div>
-          <div className="max-md:mt-1 h-[60px] md:h-20 flex items-center">
+          <div className="max-md:hidden h-[60px] md:h-20 flex items-center">
             <h2
               className="text-5xl md:text-7xl font-display uppercase tracking-tighter italic"
               style={{ color: item.accent }}
@@ -49,7 +49,7 @@ function RollingTextItem(props: RollingTextItemProps & { key?: React.Key }) {
 
       <div
         className={cn(
-          "z-20 h-40 w-56 overflow-hidden rounded-xl shadow-[6px_6px_0_#161513] md:h-60 md:w-96",
+          "z-20 h-52 w-full max-w-sm overflow-hidden rounded-xl shadow-[6px_6px_0_#161513] md:h-60 md:w-96",
           "relative mt-4 opacity-100 scale-100 rotate-0 translate-x-0 pointer-events-auto",
           "md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:pointer-events-none",
           "md:opacity-0 md:scale-95 md:rotate-3 md:translate-x-4",
