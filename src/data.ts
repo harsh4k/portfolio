@@ -37,16 +37,16 @@ export const TIMELINE: TimelineItem[] = [
   {
     year: "2024",
     title: "ENERGY",
-    description: "Still figuring things out. Still smiling anyway."
+    description: "Not taking life too seriously. Learning while having fun. Still figuring it all out."
   },
   {
     year: "2025",
     title: "BUILD MODE",
-    description: "This was the year ideas finally became things I could actually ship."
+    description: "Locking in. Late nights. Friends beside me. Building things that finally felt real."
   },
   {
     year: "2026",
     title: "PERSPECTIVE",
-    description: "Some answers don't appear behind a monitor."
+    description: "Stepping away. Slowing down. Some answers don't appear behind a monitor."
   }
 ];

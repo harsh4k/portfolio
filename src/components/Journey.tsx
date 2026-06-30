@@ -17,6 +17,7 @@ const rollingItems: ListItem[] = TIMELINE.map((item, i) => ({
   src: timelineImages[i],
   alt: item.title,
   accent: accentColors[i],
+  description: item.description,
 }));
 
 export default function Journey() {

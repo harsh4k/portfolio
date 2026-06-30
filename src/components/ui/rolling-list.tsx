@@ -8,6 +8,7 @@ interface ListItem {
   src: string;
   alt: string;
   accent: string;
+  description?: string;
 }
 
 interface RollingTextItemProps {
@@ -39,6 +40,12 @@ function RollingTextItem(props: RollingTextItemProps & { key?: React.Key }) {
       <span className="absolute top-8 right-0 text-xs font-mono uppercase tracking-widest text-[#161513]/40 transition-opacity duration-300 group-hover:opacity-0 hidden md:block">
         {item.category}
       </span>
+
+      {item.description && (
+        <p className="mt-2 text-xs font-mono leading-relaxed text-[#161513]/55 max-w-md">
+          {item.description}
+        </p>
+      )}
 
       <div
         className={cn(
