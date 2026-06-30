@@ -62,7 +62,7 @@ export default function Contact() {
             <p className="mb-4 inline-flex rounded-full bg-[#C9FF3D] px-4 py-2 font-mono text-[10px] uppercase tracking-[0.16em] text-[#161513]">
               Open to opportunities
             </p>
-            <h2 className="font-display text-[18vw] uppercase leading-[0.75] tracking-[-0.07em] sm:text-[14vw] lg:text-[10vw]">
+            <h2 className="font-display text-[14vw] uppercase leading-[0.75] tracking-[-0.07em] sm:text-[12vw] lg:text-[9vw]">
               Let's Build
               <br />
               Something Great.
@@ -70,7 +70,7 @@ export default function Contact() {
           </div>
 
           <div className="rounded-[36px] bg-[#F13A18] p-5 text-[#EEE9DC] md:p-8">
-            <p className="font-display text-2xl uppercase leading-tight md:text-3xl">
+            <p className="font-display text-xl uppercase leading-tight md:text-2xl">
               Every great project starts with a conversation. Let's build something together.
             </p>
             <button

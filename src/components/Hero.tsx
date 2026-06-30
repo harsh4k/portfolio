@@ -24,7 +24,7 @@ export default function Hero() {
               <span className="h-2 w-2 rounded-full bg-[#C9FF3D]" />
               Full Stack Developer
             </div>
-            <h1 className="font-display text-[18vw] uppercase leading-[0.78] tracking-[-0.04em] text-[#161513] sm:text-[15vw] lg:text-[9.6vw]">
+            <h1 className="font-display text-[15vw] uppercase leading-[0.78] tracking-[-0.04em] text-[#161513] sm:text-[13vw] lg:text-[9vw]">
               Harshit
               <br />
               Chauhan
