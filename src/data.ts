@@ -36,17 +36,17 @@ export const PROJECTS: Project[] = [
 export const TIMELINE: TimelineItem[] = [
   {
     year: "2024",
-    title: "FOUNDATION",
-    description: "The year curiosity became a habit. Learning, experimenting, breaking things—and remembering to have fun along the way."
+    title: "ENERGY",
+    description: "Still figuring things out. Still smiling anyway."
   },
   {
     year: "2025",
-    title: "LOCK-IN MODE",
-    description: "Hackathons, long nights, debugging with friends and learning under pressure. Probably where I grew the fastest."
+    title: "BUILD MODE",
+    description: "This was the year ideas finally became things I could actually ship."
   },
   {
     year: "2026",
     title: "PERSPECTIVE",
-    description: "The mountains remind me to slow down. The best ideas usually come after stepping away from the screen."
+    description: "Some answers don't appear behind a monitor."
   }
 ];

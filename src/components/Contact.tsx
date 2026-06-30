@@ -63,8 +63,8 @@ export default function Contact() {
           </div>
 
           <div className="rounded-[36px] bg-[#F13A18] p-5 text-[#EEE9DC] md:p-8">
-            <p className="font-display text-4xl uppercase leading-[0.86] md:text-6xl">
-              Every good project starts<br />with a conversation.<br />Let's have one.
+            <p className="font-display text-2xl uppercase leading-tight md:text-3xl">
+              Every good project starts with a conversation. Let's have one.
             </p>
             <button
               onClick={() => {

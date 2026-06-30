@@ -47,7 +47,7 @@ export default function Journey() {
             </h2>
           </div>
           <p className="max-w-md text-sm leading-relaxed text-[#161513]/62">
-            Not a resume. Just a few moments that shaped how I think, build and see the world.
+            Not every milestone belongs on a resume. Some belong here.
           </p>
         </div>
 
