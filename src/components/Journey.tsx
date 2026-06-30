@@ -47,7 +47,7 @@ export default function Journey() {
             </h2>
           </div>
           <p className="max-w-md text-sm leading-relaxed text-[#161513]/62">
-            A look back at how I got here. Each year brought new tools, better judgment, and a clearer direction.
+            Not a resume. Just a few moments that shaped how I think, build and see the world.
           </p>
         </div>
 
@@ -71,7 +71,6 @@ export default function Journey() {
           <div className="rounded-[32px] bg-[#F13A18] p-5 text-[#EEE9DC]">
             <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#EEE9DC]/65">Still iterating. Still learning. Still shipping.</p>
             <p className="mt-16 font-display text-5xl uppercase leading-none">Version 2.6</p>
-            <p className="mt-3 text-sm leading-relaxed text-[#EEE9DC]/65">Every project is another version update.</p>
           </div>
           <div className="rounded-[32px] border border-[#161513]/15 bg-[#EEE9DC] p-5">
             <p className="font-display text-5xl uppercase leading-[0.86] tracking-[-0.04em] md:text-7xl">

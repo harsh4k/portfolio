@@ -53,7 +53,7 @@ export default function Contact() {
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
             <p className="mb-4 inline-flex rounded-full bg-[#C9FF3D] px-4 py-2 font-mono text-[10px] uppercase tracking-[0.16em] text-[#161513]">
-              Open for collaboration
+              Open to opportunities
             </p>
             <h2 className="font-display text-[18vw] uppercase leading-[0.75] tracking-[-0.07em] sm:text-[14vw] lg:text-[10vw]">
               Let's Build
@@ -63,8 +63,8 @@ export default function Contact() {
           </div>
 
           <div className="rounded-[36px] bg-[#F13A18] p-5 text-[#EEE9DC] md:p-8">
-            <p className="text-sm leading-relaxed text-[#EEE9DC]/85">
-              Whether it's a freelance project, internship opportunity, collaboration, or simply a conversation about web development, I'm always open to connecting.
+            <p className="font-display text-4xl uppercase leading-[0.86] md:text-6xl">
+              Every good project starts<br />with a conversation.<br />Let's have one.
             </p>
             <button
               onClick={() => {
@@ -74,7 +74,7 @@ export default function Contact() {
               }}
               className="mt-8 flex w-full items-center justify-between rounded-full bg-[#EEE9DC] px-5 py-4 font-mono text-[10px] uppercase tracking-[0.16em] text-[#161513] transition-transform hover:-translate-y-1"
             >
-              {copied === "email" ? "Email copied" : "Copy email"}
+              {copied === "email" ? "Email copied" : "Say hello"}
               <Copy className="h-4 w-4" />
             </button>
           </div>

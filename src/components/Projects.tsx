@@ -82,7 +82,7 @@ export default function Projects() {
               Better taste.
             </p>
             <p className="text-sm leading-relaxed text-[#EEE9DC]/65">
-              Every project pushes one skill further than the last—better architecture, cleaner code, stronger visual hierarchy, or more refined interactions. Progress comes from shipping, not collecting tutorials.
+              Every project improves something—design, architecture, performance or interaction. Progress comes from building consistently.
             </p>
           </div>
         </div>

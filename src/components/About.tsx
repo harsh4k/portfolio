@@ -79,10 +79,13 @@ export default function About() {
               ))}
             </div>
             <p className="max-w-4xl text-2xl font-semibold leading-tight tracking-tight md:text-4xl">
-              I'm a Computer Engineering student at NMIMS focused on building modern web applications where engineering meets design.
+              I'm Harshit Chauhan—a Computer Engineering student who enjoys building products where engineering, design and interaction come together.
             </p>
             <p className="mt-8 max-w-3xl text-base leading-relaxed text-[#EEE9DC]/62 md:text-lg">
-              My interests span frontend architecture, interactive interfaces, motion design, and scalable UI systems. I enjoy transforming complex ideas into clean, intuitive digital experiences that balance performance with aesthetics. Whether I'm building an e-commerce platform, experimenting with Three.js, or refining component systems, my goal remains the same: create products that feel as polished as they perform.
+              Most of my work lives on the frontend, but I'm equally interested in understanding the systems behind it. Whether it's an e-commerce platform, an interactive portfolio, or experimenting with Three.js, I'm always chasing cleaner architecture and better user experiences.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-[#EEE9DC]/62 md:text-lg">
+              I enjoy building things that feel intentional, not just functional.
             </p>
           </motion.div>
 
@@ -117,10 +120,14 @@ export default function About() {
             className="grid min-w-0 gap-4 rounded-[32px] border border-[#161513]/15 bg-[#F13A18] p-5 text-[#EEE9DC] md:grid-cols-[1.4fr_0.6fr] md:p-8"
           >
             <p className="min-w-0 break-words font-display text-[clamp(2.4rem,11vw,4.5rem)] uppercase leading-[0.85] tracking-[-0.04em]">
-              Build the thing. Then make it unmistakably yours.
+              Good design.
+              <br />
+              Clear systems.
+              <br />
+              Better products.
             </p>
             <p className="min-w-0 self-end text-sm leading-relaxed text-[#EEE9DC]/75">
-              Every project starts by solving a problem. The difference comes from execution—clear systems, refined interactions, and attention to details that people remember long after they leave the page.
+              Every project starts by solving a problem. The real difference comes from thoughtful execution, clean systems and attention to detail.
             </p>
           </motion.div>
         </div>
