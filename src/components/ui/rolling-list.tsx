@@ -1,3 +1,4 @@
+import * as React from "react";
 import { cn } from "../../lib/utils";
 
 interface ListItem {
@@ -13,7 +14,8 @@ interface RollingTextItemProps {
   item: ListItem;
 }
 
-function RollingTextItem({ item }: RollingTextItemProps) {
+function RollingTextItem(props: RollingTextItemProps & { key?: React.Key }) {
+  const { item } = props;
   return (
     <div className="group relative w-full cursor-pointer border-b border-[#161513]/12 py-6 last:border-b-0">
       <div className="relative overflow-hidden h-[60px] md:h-20">
