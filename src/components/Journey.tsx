@@ -47,7 +47,7 @@ export default function Journey() {
             </h2>
           </div>
           <p className="max-w-md text-sm leading-relaxed text-[#161513]/62">
-            Not a corporate ladder. More like a build log: curiosity first, systems next, taste always catching up.
+            A look back at how I got here. Each year brought new tools, better judgment, and a clearer direction.
           </p>
         </div>
 
@@ -69,14 +69,18 @@ export default function Journey() {
           className="mt-12 grid gap-4 md:grid-cols-[0.8fr_1.2fr]"
         >
           <div className="rounded-[32px] bg-[#F13A18] p-5 text-[#EEE9DC]">
-            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#EEE9DC]/65">Timeline register</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#EEE9DC]/65">Still iterating. Still learning. Still shipping.</p>
             <p className="mt-16 font-display text-5xl uppercase leading-none">Version 2.6</p>
+            <p className="mt-3 text-sm leading-relaxed text-[#EEE9DC]/65">Every project is another version update.</p>
           </div>
           <div className="rounded-[32px] border border-[#161513]/15 bg-[#EEE9DC] p-5">
             <p className="font-display text-5xl uppercase leading-[0.86] tracking-[-0.04em] md:text-7xl">
               Still early.
               <br />
               Already building.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-[#161513]/62">
+              Experience isn't measured only in years. It's measured in projects shipped, problems solved, and the willingness to improve with every build.
             </p>
           </div>
         </motion.div>

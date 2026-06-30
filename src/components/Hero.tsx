@@ -22,7 +22,7 @@ export default function Hero() {
           <motion.div style={{ y: titleY }} className="pt-6 lg:pt-8">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#161513]/15 bg-[#EEE9DC] px-3 py-2 font-mono text-[9px] uppercase tracking-[0.18em]">
               <span className="h-2 w-2 rounded-full bg-[#C9FF3D]" />
-              Full-stack / R&D / UI systems
+              Frontend engineer / Creative developer
             </div>
             <h1 className="font-display text-[18vw] uppercase leading-[0.78] tracking-[-0.04em] text-[#161513] sm:text-[15vw] lg:text-[9.6vw]">
               Harshit
@@ -48,9 +48,9 @@ export default function Hero() {
                 className="h-full w-full object-cover grayscale contrast-110"
               />
               <div className="absolute inset-x-3 bottom-3 rounded-2xl bg-[#EEE9DC] p-3 text-[#161513]">
-                <p className="font-display text-xl uppercase leading-none">Build clean. Think deep.</p>
+                <p className="font-display text-xl uppercase leading-[1.1]">Frontend Engineer<br />Creative Developer<br />UI Systems Builder</p>
                 <p className="mt-2 font-mono text-[9px] uppercase tracking-[0.12em] text-[#161513]/60">
-                  Computer engineering student at MPSTME, NMIMS
+                  I build modern web experiences that combine clean engineering, thoughtful design, and smooth interactions.
                 </p>
               </div>
             </div>
@@ -60,12 +60,17 @@ export default function Hero() {
         <div className="grid gap-4 border-t border-[#161513]/15 pt-5 sm:grid-cols-3 lg:col-span-12">
           <div className="rounded-3xl bg-[#161513] p-5 text-[#EEE9DC]">
             <Code2 className="mb-6 h-5 w-5 text-[#C9FF3D]" />
-            <p className="font-display text-2xl uppercase leading-none">Systems that feel alive.</p>
+            <p className="font-display text-2xl uppercase leading-none">Currently exploring</p>
+            <div className="mt-2 space-y-1 font-mono text-[9px] uppercase tracking-[0.14em] text-[#EEE9DC]/55">
+              <p>Creative Development / Three.js / GSAP</p>
+              <p>Performance-first Frontends / Scalable UI</p>
+              <p>AI-assisted Development Workflows</p>
+            </div>
           </div>
           <div className="rounded-3xl border border-[#161513]/15 bg-[#EEE9DC] p-5">
             <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#161513]/50">Current focus</p>
             <p className="mt-8 text-sm leading-relaxed text-[#161513]/75">
-              Designing sharp interfaces, studying backend architecture, and turning curiosity into working digital products.
+              I'm currently focused on building production-ready frontend applications while improving my understanding of backend architecture, motion design, and scalable software systems.
             </p>
           </div>
           <button
@@ -74,7 +79,7 @@ export default function Hero() {
           >
             <Sparkle className="h-5 w-5" />
             <span className="flex items-end justify-between font-display text-3xl uppercase leading-none">
-              Enter
+              Let's Build
               <ArrowUpRight className="h-7 w-7 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </span>
           </button>

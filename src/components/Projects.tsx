@@ -18,7 +18,7 @@ export default function Projects() {
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[#161513]/62">
-            Three shipped interfaces, arranged like a personal product catalog: sharp, direct, and built to be opened.
+            Projects that pushed my skills further. Each one taught me something about architecture, performance, or interaction design.
           </p>
         </div>
 
@@ -82,8 +82,7 @@ export default function Projects() {
               Better taste.
             </p>
             <p className="text-sm leading-relaxed text-[#EEE9DC]/65">
-              This section should feel like a launch shelf, not a resume table. Each project is a proof of direction:
-              speed, interaction, structure, and the courage to make the interface memorable.
+              Every project pushes one skill further than the last—better architecture, cleaner code, stronger visual hierarchy, or more refined interactions. Progress comes from shipping, not collecting tutorials.
             </p>
           </div>
         </div>

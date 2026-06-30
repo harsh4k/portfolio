@@ -8,8 +8,8 @@ export default function Contact() {
     {
       label: "GITHUB",
       icon: Github,
-      address: "@harshit-chauhan",
-      url: "https://github.com/harshit-chauhan",
+      address: "@harsh4k",
+      url: "https://github.com/harsh4k",
       copy: false,
     },
     {
@@ -44,10 +44,10 @@ export default function Contact() {
       <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-[1600px] flex-col justify-between gap-12">
         <div className="flex items-start justify-between border-b border-[#EEE9DC]/10 pb-5 font-mono text-[10px] uppercase tracking-[0.2em] text-[#EEE9DC]/50">
           <span>(05) Connect Layer</span>
-          <span className="flex items-center gap-1.5">
-            <MapPin className="h-3 w-3" />
-            Remote / Worldwide
-          </span>
+            <span className="flex items-center gap-1.5">
+              <MapPin className="h-3 w-3" />
+              Mumbai, India
+            </span>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
@@ -56,15 +56,15 @@ export default function Contact() {
               Open for collaboration
             </p>
             <h2 className="font-display text-[18vw] uppercase leading-[0.75] tracking-[-0.07em] sm:text-[14vw] lg:text-[10vw]">
-              Make it
+              Let's Build
               <br />
-              real.
+              Something Great.
             </h2>
           </div>
 
           <div className="rounded-[36px] bg-[#F13A18] p-5 text-[#EEE9DC] md:p-8">
-            <p className="font-display text-4xl uppercase leading-[0.86] md:text-6xl">
-              Bring the idea. I will bring the build.
+            <p className="text-sm leading-relaxed text-[#EEE9DC]/85">
+              Whether it's a freelance project, internship opportunity, collaboration, or simply a conversation about web development, I'm always open to connecting.
             </p>
             <button
               onClick={() => {

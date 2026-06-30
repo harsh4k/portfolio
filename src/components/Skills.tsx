@@ -2,14 +2,14 @@ import { Brain, Code2, Database, Layers, Palette, Rocket } from "lucide-react";
 import { GooeyText } from "./ui/gooey-text-morphing";
 
 export default function Skills() {
-  const morphWords = ["Frontend", "Backend", "Design", "Ship"];
+  const morphWords = ["Frontend", "Backend", "Tools", "Stack"];
   const skills = [
-    { icon: Code2, label: "React / Next", detail: "Interfaces, routing, components" },
-    { icon: Palette, label: "UI Systems", detail: "Layout, rhythm, interaction" },
-    { icon: Database, label: "Backend", detail: "APIs, data, reliability" },
-    { icon: Layers, label: "Tailwind", detail: "Fast styling, precise surfaces" },
-    { icon: Brain, label: "R&D", detail: "Questions, experiments, notes" },
-    { icon: Rocket, label: "Motion", detail: "Scroll, states, micro-feedback" },
+    { icon: Code2, label: "React / Next", detail: "TypeScript, Vite, component architecture" },
+    { icon: Palette, label: "UI Systems", detail: "Tailwind CSS, design tokens, responsive" },
+    { icon: Database, label: "Backend", detail: "Node.js, Express, Supabase, PostgreSQL" },
+    { icon: Layers, label: "Animation", detail: "Three.js, GSAP, motion design" },
+    { icon: Brain, label: "Tools", detail: "Git, Figma, VS Code, Vercel, Cursor" },
+    { icon: Rocket, label: "APIs", detail: "REST, auth, data fetching, caching" },
   ];
 
   return (
