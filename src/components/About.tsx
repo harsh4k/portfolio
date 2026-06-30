@@ -14,18 +14,18 @@ export default function About() {
   const notes = [
     {
       icon: Gamepad2,
-      title: "Game UI",
-      copy: "Valorant-like clarity, survival-game atmosphere, and menus that feel engineered.",
+      title: "GAMING",
+      copy: "Immersive worlds, clean HUDs, and game mechanics have shaped how I think about interface design. Titles like Valorant and Dying Light continue to inspire the way I approach clarity, feedback and interaction.",
     },
     {
       icon: Compass,
-      title: "Space",
-      copy: "Big unknowns, quiet discipline, and that constant pull to understand the system.",
+      title: "SCI-FI & SPACE",
+      copy: "Curiosity doesn't stop at software. Space reminds me how much there still is to discover—and keeps me asking better questions.",
     },
     {
       icon: Award,
-      title: "Sports",
-      copy: "Football, volleyball, badminton: movement, timing, stamina, reset.",
+      title: "SPORTS",
+      copy: "Football, volleyball and badminton help me reset, stay competitive and keep a balanced mindset away from the screen.",
     },
   ];
 
@@ -79,10 +79,13 @@ export default function About() {
               ))}
             </div>
             <p className="max-w-4xl text-2xl font-semibold leading-tight tracking-tight md:text-4xl">
-              I'm Harshit Chauhan, a Computer Engineering student passionate about building complete software systems—from polished user interfaces to the backend services that power them.
+              Hi, I'm Harshit Chauhan. 👋
             </p>
             <p className="mt-8 max-w-3xl text-base leading-relaxed text-[#EEE9DC]/62 md:text-lg">
-              I enjoy solving problems through engineering, thoughtful design and continuous learning. Every project is an opportunity to improve how I build, think and collaborate.
+              I'm a first-year Computer Engineering student driven by a lifelong curiosity for how things work. Whether it's the logic behind software, the architecture of a system, or the mysteries of space, I've always enjoyed understanding what happens beneath the surface.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-[#EEE9DC]/62 md:text-lg">
+              For me, becoming an engineer isn't just a career goal—it's something I'm actively working toward every day. I enjoy bridging design and engineering, building software that's both functional and intuitive, while constantly learning how to create reliable, scalable systems.
             </p>
           </motion.div>
 
