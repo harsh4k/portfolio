@@ -70,7 +70,7 @@ export default function Journey() {
           className="mt-12 grid gap-4 md:grid-cols-[0.8fr_1.2fr]"
         >
           <div className="rounded-[32px] bg-[#F13A18] p-5 text-[#EEE9DC]">
-            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#EEE9DC]/65">Still iterating. Still learning. Still shipping.</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#EEE9DC]/65">Still iterating. Still learning. Still building.</p>
             <p className="mt-16 font-display text-5xl uppercase leading-none">Version 2.6</p>
           </div>
           <div className="rounded-[32px] border border-[#161513]/15 bg-[#EEE9DC] p-5">
@@ -80,7 +80,7 @@ export default function Journey() {
               Already building.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-[#161513]/62">
-              Experience isn't measured only in years. It's measured in projects shipped, problems solved, and the willingness to improve with every build.
+              Experience isn't measured only by time. It's measured by curiosity, consistency and the willingness to keep improving.
             </p>
           </div>
         </motion.div>

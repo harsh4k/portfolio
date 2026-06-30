@@ -82,7 +82,7 @@ export default function Projects() {
               Better taste.
             </p>
             <p className="text-sm leading-relaxed text-[#EEE9DC]/65">
-              Every project improves something—design, architecture, performance or interaction. Progress comes from building consistently.
+              Every project leaves me with something valuable—better architecture, stronger problem solving, cleaner code or a new perspective. Progress comes from building consistently.
             </p>
           </div>
         </div>

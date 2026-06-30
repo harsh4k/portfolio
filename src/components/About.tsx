@@ -54,10 +54,10 @@ export default function About() {
             </h2>
             <div className="mt-8 rounded-3xl bg-[#161513] p-5 text-[#EEE9DC]">
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#EEE9DC]/55">
-                Frontend engineer / Computer engineering
+                Full Stack Developer
               </p>
               <p className="mt-4 text-sm leading-relaxed text-[#EEE9DC]/75">
-                I build things that work well and look intentional. My focus is on the frontend, but I care about the full system.
+                Building software with clarity, purpose and curiosity.
               </p>
             </div>
           </div>
@@ -72,20 +72,17 @@ export default function About() {
             className="min-w-0 rounded-[32px] bg-[#161513] p-6 text-[#EEE9DC] md:p-10"
           >
             <div className="mb-12 flex min-w-0 flex-wrap gap-2 font-mono text-[10px] uppercase tracking-[0.14em]">
-              {["NMIMS", "Computer Engineering", "Frontend", "UI Systems"].map((item) => (
+              {["NMIMS", "Computer Engineering", "Full Stack", "Software"].map((item) => (
                 <span key={item} className="rounded-full border border-[#EEE9DC]/15 px-3 py-2 text-[#EEE9DC]/65">
                   {item}
                 </span>
               ))}
             </div>
             <p className="max-w-4xl text-2xl font-semibold leading-tight tracking-tight md:text-4xl">
-              I'm Harshit Chauhan—a Computer Engineering student who enjoys building products where engineering, design and interaction come together.
+              I'm Harshit Chauhan, a Computer Engineering student passionate about building complete software systems—from polished user interfaces to the backend services that power them.
             </p>
             <p className="mt-8 max-w-3xl text-base leading-relaxed text-[#EEE9DC]/62 md:text-lg">
-              Most of my work lives on the frontend, but I'm equally interested in understanding the systems behind it. Whether it's an e-commerce platform, an interactive portfolio, or experimenting with Three.js, I'm always chasing cleaner architecture and better user experiences.
-            </p>
-            <p className="mt-6 text-base leading-relaxed text-[#EEE9DC]/62 md:text-lg">
-              I enjoy building things that feel intentional, not just functional.
+              I enjoy solving problems through engineering, thoughtful design and continuous learning. Every project is an opportunity to improve how I build, think and collaborate.
             </p>
           </motion.div>
 
@@ -120,14 +117,14 @@ export default function About() {
             className="grid min-w-0 gap-4 rounded-[32px] border border-[#161513]/15 bg-[#F13A18] p-5 text-[#EEE9DC] md:grid-cols-[1.4fr_0.6fr] md:p-8"
           >
             <p className="min-w-0 break-words font-display text-[clamp(2.4rem,11vw,4.5rem)] uppercase leading-[0.85] tracking-[-0.04em]">
-              Good design.
+              Learn.
               <br />
-              Clear systems.
+              Build.
               <br />
-              Better products.
+              Repeat.
             </p>
             <p className="min-w-0 self-end text-sm leading-relaxed text-[#EEE9DC]/75">
-              Every project starts by solving a problem. The real difference comes from thoughtful execution, clean systems and attention to detail.
+              Every project teaches something new. I believe consistent iteration, clean engineering and curiosity lead to better software.
             </p>
           </motion.div>
         </div>

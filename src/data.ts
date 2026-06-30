@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     number: "01",
     title: "VELSARO",
     role: "Frontend Developer",
-    description: "Luxury fragrance e-commerce platform focused on premium branding, immersive interactions and scalable frontend architecture.",
+    description: "Luxury fragrance e-commerce platform combining modern frontend development, secure authentication, database integration and scalable application architecture.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Supabase", "Vite"],
     visual: "/images/velsaro.png",
     link: "https://www.velsaro.in/"
@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
     number: "02",
     title: "NEXCART",
     role: "Frontend Developer",
-    description: "Modern commerce interface exploring reusable UI systems, responsive layouts and conversion-focused design.",
+    description: "Modern commerce application focused on reusable components, responsive layouts, API integration and performance optimisation.",
     tags: ["React", "Tailwind CSS", "TypeScript", "REST API"],
     visual: "/images/nexcart.png",
     link: "https://nexcart-v1.vercel.app/"
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     number: "03",
     title: "OYSNK",
     role: "Frontend Developer",
-    description: "Interactive UI experiment exploring motion, layout systems and modern frontend architecture.",
+    description: "Experimental web application exploring interaction systems, creative development and modern software architecture.",
     tags: ["Next.js", "CSS", "GSAP", "Tailwind CSS"],
     visual: "/images/Osynk.png",
     link: "https://oysnk.vercel.app/"
@@ -36,17 +36,17 @@ export const PROJECTS: Project[] = [
 export const TIMELINE: TimelineItem[] = [
   {
     year: "2024",
-    title: "ENERGY",
-    description: "Not taking life too seriously. Learning while having fun. Still figuring it all out."
+    title: "FUN FIRST",
+    description: "Learning was chaotic. So was everything else. Wouldn't change it."
   },
   {
     year: "2025",
-    title: "BUILD MODE",
-    description: "Locking in. Late nights. Friends beside me. Building things that finally felt real."
+    title: "LOCKED IN",
+    description: "Long nights. Hackathons. Good people. Great memories."
   },
   {
     year: "2026",
     title: "PERSPECTIVE",
-    description: "Stepping away. Slowing down. Some answers don't appear behind a monitor."
+    description: "Sometimes stepping away helps you move forward."
   }
 ];

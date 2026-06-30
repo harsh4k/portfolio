@@ -22,7 +22,7 @@ export default function Hero() {
           <motion.div style={{ y: titleY }} className="pt-6 lg:pt-8">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#161513]/15 bg-[#EEE9DC] px-3 py-2 font-mono text-[9px] uppercase tracking-[0.18em]">
               <span className="h-2 w-2 rounded-full bg-[#C9FF3D]" />
-              UI engineer
+              Full Stack Developer
             </div>
             <h1 className="font-display text-[18vw] uppercase leading-[0.78] tracking-[-0.04em] text-[#161513] sm:text-[15vw] lg:text-[9.6vw]">
               Harshit
@@ -48,9 +48,9 @@ export default function Hero() {
                 className="h-full w-full object-cover grayscale contrast-110"
               />
               <div className="absolute inset-x-3 bottom-3 rounded-2xl bg-[#EEE9DC] p-3 text-[#161513]">
-                <p className="font-display text-xl uppercase leading-[1.1]">UI Engineer</p>
+                <p className="font-display text-xl uppercase leading-[1.1]">Full Stack Developer</p>
                 <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.12em] text-[#161513]/60">
-                  Building interfaces that people remember.
+                  Building software that solves real problems.
                 </p>
               </div>
             </div>
@@ -62,18 +62,18 @@ export default function Hero() {
             <Code2 className="mb-6 h-5 w-5 text-[#C9FF3D]" />
             <p className="font-display text-2xl uppercase leading-none">Currently exploring</p>
             <div className="mt-3 space-y-0.5 font-mono text-[9px] uppercase tracking-[0.14em] text-[#EEE9DC]/55">
+              <p>• React Ecosystem</p>
+              <p>• Node.js</p>
+              <p>• PostgreSQL</p>
+              <p>• System Design</p>
               <p>• Three.js</p>
-              <p>• GSAP</p>
-              <p>• Motion Design</p>
-              <p>• UI Architecture</p>
-              <p>• Performance</p>
               <p>• AI-assisted Development</p>
             </div>
           </div>
           <div className="rounded-3xl border border-[#161513]/15 bg-[#EEE9DC] p-5">
             <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#161513]/50">Current focus</p>
             <p className="mt-8 text-sm leading-relaxed text-[#161513]/75">
-              Currently building production-ready frontend applications while learning backend architecture and scalable software systems.
+              Currently building production-ready full stack applications while improving my understanding of backend systems, software architecture and scalable engineering.
             </p>
           </div>
           <button
