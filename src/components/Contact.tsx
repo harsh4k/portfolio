@@ -99,7 +99,7 @@ export default function Contact() {
                         <Copy className="h-3 w-3" /> Copied
                       </span>
                     ) : (
-                      <Copy className="h-4 w-4 text-[#F13A18] opacity-0 transition-opacity group-hover:opacity-100" />
+                      <Copy className="h-4 w-4 text-[#F13A18] max-md:opacity-100 opacity-0 transition-opacity group-hover:opacity-100" />
                     )}
                   </div>
                   <Icon className="h-6 w-6 opacity-75 transition-transform group-hover:scale-110" />

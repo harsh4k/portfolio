@@ -44,7 +44,7 @@ export default function Projects() {
                 <img
                   src={project.visual}
                   alt={project.title}
-                  className="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                    className="h-full w-full object-cover max-md:grayscale-0 grayscale transition duration-700 md:group-hover:scale-105 md:group-hover:grayscale-0"
                 />
                 <div className="absolute left-3 top-3 rounded-full bg-[#C9FF3D] px-3 py-2 font-mono text-[9px] uppercase tracking-[0.16em] text-[#161513]">
                   Live project

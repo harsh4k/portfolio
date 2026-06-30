@@ -61,10 +61,10 @@ export default function Navbar() {
             className="group flex items-center gap-2 rounded-full border border-[#F13A18] px-4 py-2 font-mono text-[10px] tracking-[0.2em] text-[#F13A18] transition-all hover:bg-[#F13A18] hover:text-[#EEE9DC] hover:-translate-y-0.5 focus:outline-none"
             id="nav-link-contact"
           >
-            <span className="w-0 overflow-hidden opacity-0 transition-all group-hover:w-4 group-hover:opacity-100">[</span>
+            <span className="max-md:w-auto max-md:opacity-100 w-0 overflow-hidden opacity-0 transition-all group-hover:w-4 group-hover:opacity-100">[</span>
             CONTACT
             <ArrowUpRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            <span className="w-0 overflow-hidden opacity-0 transition-all group-hover:w-3 group-hover:opacity-100">]</span>
+            <span className="max-md:w-auto max-md:opacity-100 w-0 overflow-hidden opacity-0 transition-all group-hover:w-3 group-hover:opacity-100">]</span>
           </button>
         </div>
       </div>
