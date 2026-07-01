@@ -197,9 +197,8 @@ export const GithubCalendar = memo(function GithubCalendar({
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDark, setIsDark] = useState(false);
   const [vw] = useState(() => typeof window !== "undefined" ? window.innerWidth : 1200);
-  const isMobile = vw < 640;
-  const cellSize = isMobile ? 8 : cellSizeProp;
-  const cellGap = isMobile ? 2 : cellGapProp;
+  const cellSize = vw < 480 ? 6 : vw < 768 ? 8 : cellSizeProp;
+  const cellGap = vw < 768 ? 2 : cellGapProp;
 
   useEffect(() => {
     const checkDark = () => {
@@ -287,7 +286,7 @@ export const GithubCalendar = memo(function GithubCalendar({
   if (loading) {
     const step2 = cellSize + cellGap;
     return (
-      <div className={cn("w-fit mx-auto space-y-3 animate-pulse", className)}>
+      <div className={cn("w-full max-w-full space-y-3 animate-pulse", className)}>
         <div className="flex gap-6"><div className="h-4 w-32 rounded bg-[#161513]/20" /><div className="h-4 w-20 rounded bg-[#161513]/20" /><div className="h-4 w-24 rounded bg-[#161513]/20" /></div>
         <div className="overflow-x-auto">
           <svg width={53 * step2 - cellGap} height={16 + 7 * step2 - cellGap} className="overflow-visible">
@@ -311,11 +310,11 @@ export const GithubCalendar = memo(function GithubCalendar({
   }
 
   return (
-    <div className={cn("w-fit mx-auto", className)}>
-      <div className="w-fit mx-auto max-w-full flex flex-col gap-3">
+    <div className={cn("w-full max-w-full", className)}>
+      <div className="w-full flex flex-col gap-3">
         <div
           ref={scrollRef}
-          className="relative overflow-x-auto"
+          className="relative w-full overflow-x-auto"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" } as CSSProperties}
         >
           <svg width={svgWidth} height={svgHeight} viewBox={`0 0 ${svgWidth} ${svgHeight}`} className="overflow-visible">
