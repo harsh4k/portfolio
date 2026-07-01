@@ -1,20 +1,10 @@
 import { motion } from "motion/react";
 import { CircularGallery, type GalleryItem } from "./ui/circular-gallery-2";
 
-const galleryItems: GalleryItem[] = [
-  { image: "https://picsum.photos/seed/mountain/800/600?grayscale", text: "Mountain" },
-  { image: "https://picsum.photos/seed/forest/800/600?grayscale", text: "Forest" },
-  { image: "https://picsum.photos/seed/coast/800/600?grayscale", text: "Coast" },
-  { image: "https://picsum.photos/seed/aurora/800/600?grayscale", text: "Aurora" },
-  { image: "https://picsum.photos/seed/architecture/800/600?grayscale", text: "Forms" },
-  { image: "https://picsum.photos/seed/minimal/800/600?grayscale", text: "Minimal" },
-  { image: "https://picsum.photos/seed/texture/800/600?grayscale", text: "Texture" },
-  { image: "https://picsum.photos/seed/light/800/600?grayscale", text: "Light" },
-  { image: "https://picsum.photos/seed/space/800/600?grayscale", text: "Space" },
-  { image: "https://picsum.photos/seed/shape/800/600?grayscale", text: "Shape" },
-  { image: "https://picsum.photos/seed/geometry/800/600?grayscale", text: "Geometry" },
-  { image: "https://picsum.photos/seed/horizon/800/600?grayscale", text: "Horizon" },
-];
+const galleryItems: GalleryItem[] = Array.from({ length: 12 }, (_, i) => ({
+  image: `/images/v${i + 1}.jpg`,
+  text: `V${i + 1}`,
+}));
 
 export default function GallerySection() {
   return (

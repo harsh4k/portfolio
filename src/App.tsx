@@ -1,89 +1,18 @@
-import { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "motion/react";
-import Lenis from "lenis";
-
-// Import modular layouts
-import Loader from "./components/Loader";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Journey from "./components/Journey";
-import GallerySection from "./components/GallerySection";
-import GitHubCalendarSection from "./components/GitHubCalendarSection";
-import Contact from "./components/Contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import WebsitesPage from "./pages/WebsitesPage";
+import FunCodePage from "./pages/FunCodePage";
+import PostersPage from "./pages/PostersPage";
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-
-  // Initialize Lenis smooth scroll on mount
-  useEffect(() => {
-    // Only run smooth scroll on non-mobile devices to maximize performance
-    const isMobile = window.innerWidth < 768;
-    if (isMobile) return;
-
-    const lenis = new Lenis({
-      duration: 1.4,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom premium ease-out
-      smoothWheel: true,
-      infinite: false,
-    });
-
-    let rafId: number;
-    function raf(time: number) {
-      lenis.raf(time);
-      rafId = requestAnimationFrame(raf);
-    }
-
-    rafId = requestAnimationFrame(raf);
-
-    return () => {
-      cancelAnimationFrame(rafId);
-      lenis.destroy();
-    };
-  }, []);
-
   return (
-    <div className="relative min-h-screen w-full bg-[#EEE9DC] text-[#161513] overflow-hidden antialiased">
-      {/* Absolute Noise Overlay for visual material warmth (fine grain brutalist texture) */}
-      <div 
-        className="fixed inset-0 z-30 pointer-events-none opacity-[0.025] bg-repeat" 
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-        }}
-        id="brutalist-grain-overlay"
-      />
-
-      <AnimatePresence mode="wait">
-        {loading ? (
-          <Loader key="loader" onComplete={() => setLoading(false)} />
-        ) : (
-          <motion.div
-            key="content"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col w-full h-full"
-            id="portfolio-main-viewport"
-          >
-            {/* Sticky Header */}
-            <Navbar />
-
-            {/* Viewport content sections */}
-            <main className="w-full flex flex-col">
-              <Hero />
-              <About />
-              <Projects />
-              <Skills />
-              <Journey />
-              <GallerySection />
-              <GitHubCalendarSection />
-              <Contact />
-            </main>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/websites" element={<WebsitesPage />} />
+        <Route path="/fun-code" element={<FunCodePage />} />
+        <Route path="/posters" element={<PostersPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

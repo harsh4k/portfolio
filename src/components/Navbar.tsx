@@ -1,13 +1,23 @@
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
 import { ArrowUpRight, Cloud } from "lucide-react";
 
 export default function Navbar() {
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+  const navigate = useNavigate();
+
+  const scrollToSection = useCallback((id: string) => {
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, [navigate]);
 
   return (
     <motion.nav
