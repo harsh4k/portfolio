@@ -62,7 +62,8 @@ function createTextTexture(
   context.font = font;
   const metrics = context.measureText(text);
   const textWidth = Math.ceil(metrics.width);
-  const textHeight = Math.ceil(parseInt(font, 10) * 1.2);
+  const fontSize = parseInt(font.match(/\d+/)?.[0] || "16", 10);
+  const textHeight = Math.ceil(fontSize * 1.2);
   canvas.width = textWidth + 20;
   canvas.height = textHeight + 20;
   context.font = font;
@@ -465,6 +466,7 @@ class App {
       alpha: true,
       antialias: true,
       dpr: Math.min(window.devicePixelRatio || 1, 2),
+      powerPreference: "high-performance",
     });
     this.gl = this.renderer.gl;
     this.gl.clearColor(0, 0, 0, 0);
@@ -483,8 +485,8 @@ class App {
 
   createGeometry() {
     this.planeGeometry = new Plane(this.gl, {
-      heightSegments: 50,
-      widthSegments: 100,
+      heightSegments: 20,
+      widthSegments: 30,
     });
   }
 
@@ -603,15 +605,15 @@ class App {
     this.boundOnTouchMove = this.onTouchMove;
     this.boundOnTouchUp = this.onTouchUp;
 
-    window.addEventListener("resize", this.boundOnResize);
-    window.addEventListener("mousewheel", this.boundOnWheel);
-    window.addEventListener("wheel", this.boundOnWheel);
+    window.addEventListener("resize", this.boundOnResize, { passive: true });
+    window.addEventListener("mousewheel", this.boundOnWheel, { passive: true });
+    window.addEventListener("wheel", this.boundOnWheel, { passive: true });
     this.container.addEventListener("mousedown", this.boundOnTouchDown);
-    window.addEventListener("mousemove", this.boundOnTouchMove);
+    window.addEventListener("mousemove", this.boundOnTouchMove, { passive: true });
     window.addEventListener("mouseup", this.boundOnTouchUp);
-    this.container.addEventListener("touchstart", this.boundOnTouchDown);
-    window.addEventListener("touchmove", this.boundOnTouchMove);
-    window.addEventListener("touchend", this.boundOnTouchUp);
+    this.container.addEventListener("touchstart", this.boundOnTouchDown, { passive: true });
+    window.addEventListener("touchmove", this.boundOnTouchMove, { passive: true });
+    window.addEventListener("touchend", this.boundOnTouchUp, { passive: true });
   }
 
   destroy() {

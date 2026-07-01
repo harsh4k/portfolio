@@ -81,6 +81,8 @@ export default function EditorialFeature({
                 <img
                   src={media}
                   alt={title}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover"
                 />
               </motion.div>

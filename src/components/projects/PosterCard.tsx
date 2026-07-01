@@ -38,6 +38,8 @@ export default function PosterCard({ poster, index }: PosterCardProps) {
           <img
             src={poster.image}
             alt={poster.keywords.join(", ")}
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover transition-all duration-[0.9s] ease-out group-hover:scale-[1.04]"
           />
         </div>

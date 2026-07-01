@@ -47,6 +47,8 @@ export default function EditorialCard({ project, accentColor }: EditorialCardPro
                 <img
                   src={project.detail.cover}
                   alt={project.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full object-cover"
                   style={{ aspectRatio: "16 / 10" }}
                 />

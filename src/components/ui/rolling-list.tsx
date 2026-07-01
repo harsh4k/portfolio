@@ -61,6 +61,8 @@ function RollingTextItem(props: RollingTextItemProps & { key?: React.Key }) {
           <img
             src={item.src}
             alt={item.alt}
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover max-md:grayscale-0 grayscale transition-all duration-500 ease-out md:group-hover:grayscale-0"
           />
           <div

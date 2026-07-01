@@ -38,7 +38,7 @@ export default function PostersView() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-[1440px] px-4 pb-32">
+        <div className="mx-auto max-w-[1440px] px-4 pb-48 md:pb-32">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -184,8 +184,8 @@ export const GithubCalendar = memo(function GithubCalendar({
   startDate,
   endDate,
   startsOnSunday = false,
-  cellSize = 12,
-  cellGap = 3,
+  cellSize: cellSizeProp = 12,
+  cellGap: cellGapProp = 3,
   cellShape = "rounded",
   theme = "github",
   showMonthLabels = true,
@@ -196,6 +196,10 @@ export const GithubCalendar = memo(function GithubCalendar({
   const id = useId();
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDark, setIsDark] = useState(false);
+  const [vw] = useState(() => typeof window !== "undefined" ? window.innerWidth : 1200);
+  const isMobile = vw < 640;
+  const cellSize = isMobile ? 8 : cellSizeProp;
+  const cellGap = isMobile ? 2 : cellGapProp;
 
   useEffect(() => {
     const checkDark = () => {
@@ -274,9 +278,9 @@ export const GithubCalendar = memo(function GithubCalendar({
 
   useEffect(() => {
     if (scrollRef.current) {
-      scrollRef.current.scrollLeft = scrollRef.current.scrollWidth;
+      scrollRef.current.scrollLeft = Math.max(0, scrollRef.current.scrollWidth - scrollRef.current.clientWidth);
     }
-  }, [fetchedData, dataProp]);
+  }, [fetchedData, dataProp, cellSize, cellGap]);
 
   const cellRx = cellShape === "circle" ? cellSize / 2 : cellSize * 0.2;
 

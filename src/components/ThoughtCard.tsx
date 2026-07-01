@@ -37,6 +37,8 @@ export default function ThoughtCard({ thought, index }: ThoughtCardProps) {
           <img
             src={thought.image}
             alt=""
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover"
           />
         </div>

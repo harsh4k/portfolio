@@ -30,7 +30,7 @@ export default function GallerySection() {
           </h2>
         </motion.div>
 
-        <div className="relative h-[500px] w-full md:h-[600px]">
+        <div className="relative h-[500px] w-full md:h-[600px]" style={{ touchAction: "none" }}>
           <CircularGallery
             items={galleryItems}
             bend={3}

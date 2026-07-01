@@ -45,6 +45,7 @@ export default function Hero() {
               <img
                 src="/images/profile.jpg"
                 alt="Harshit Chauhan portrait"
+                fetchpriority="high"
                 className="h-full w-full object-cover grayscale contrast-110"
               />
               <div className="absolute inset-x-3 bottom-3 rounded-2xl bg-[#EEE9DC] p-3 text-[#161513]">
