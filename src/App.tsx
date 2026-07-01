@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Journey from "./components/Journey";
 import GallerySection from "./components/GallerySection";
+import GitHubCalendarSection from "./components/GitHubCalendarSection";
 import Contact from "./components/Contact";
 
 export default function App() {
@@ -77,6 +78,7 @@ export default function App() {
               <Skills />
               <Journey />
               <GallerySection />
+              <GitHubCalendarSection />
               <Contact />
             </main>
           </motion.div>
