@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { CircularGallery, type GalleryItem } from "./ui/circular-gallery-2";
 
@@ -7,6 +8,15 @@ const galleryItems: GalleryItem[] = Array.from({ length: 12 }, (_, i) => ({
 }));
 
 export default function GallerySection() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check, { passive: true });
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   return (
     <section
       id="gallery"
@@ -30,14 +40,40 @@ export default function GallerySection() {
           </h2>
         </motion.div>
 
-        <div className="relative h-[500px] w-full md:h-[600px]" style={{ touchAction: "none" }}>
-          <CircularGallery
-            items={galleryItems}
-            bend={3}
-            borderRadius={0.05}
-            scrollEase={0.02}
-          />
-        </div>
+        {isMobile ? (
+          <div
+            className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 sm:-mx-6 sm:px-6"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {galleryItems.map((item) => (
+              <div
+                key={item.text}
+                className="relative aspect-[4/5] w-[80vw] shrink-0 snap-center overflow-hidden rounded-2xl bg-[#161513]"
+              >
+                <img
+                  src={item.image}
+                  alt={item.text}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#161513]/80 to-transparent" />
+                <span className="absolute bottom-4 left-4 font-display text-xl uppercase tracking-tight text-white/80">
+                  {item.text}
+                </span>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="relative h-[500px] w-full md:h-[600px]" style={{ touchAction: "none" }}>
+            <CircularGallery
+              items={galleryItems}
+              bend={3}
+              borderRadius={0.05}
+              scrollEase={0.02}
+            />
+          </div>
+        )}
       </div>
     </section>
   );
