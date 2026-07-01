@@ -276,10 +276,10 @@ export const GithubCalendar = memo(function GithubCalendar({
   const svgHeight = monthLabelHeight + 7 * step - cellGap;
 
   useEffect(() => {
-    if (scrollRef.current) {
+    if (scrollRef.current && dataProp) {
       scrollRef.current.scrollLeft = Math.max(0, scrollRef.current.scrollWidth - scrollRef.current.clientWidth);
     }
-  }, [fetchedData, dataProp, cellSize, cellGap]);
+  }, [dataProp, cellSize, cellGap]);
 
   const cellRx = cellShape === "circle" ? cellSize / 2 : cellSize * 0.2;
 
@@ -314,8 +314,8 @@ export const GithubCalendar = memo(function GithubCalendar({
       <div className="w-full flex flex-col gap-3">
         <div
           ref={scrollRef}
-          className="relative w-full overflow-x-auto"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" } as CSSProperties}
+          className="relative w-full overflow-x-auto pb-2"
+          style={{ scrollbarWidth: "thin" } as CSSProperties}
         >
           <svg width={svgWidth} height={svgHeight} viewBox={`0 0 ${svgWidth} ${svgHeight}`} className="overflow-visible">
             {showMonthLabels && (() => {
