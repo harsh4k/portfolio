@@ -51,7 +51,7 @@ export default function Contact() {
     >
       <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-[1600px] flex-col justify-between gap-12">
         <div className="flex items-start justify-between border-b border-[#EEE9DC]/10 pb-5 font-mono text-[10px] uppercase tracking-[0.2em] text-[#EEE9DC]/50">
-          <span>(05) Connect Layer</span>
+          <span>(06) Connect Layer</span>
             <span className="flex items-center gap-1.5">
               <MapPin className="h-3 w-3" />
               Mumbai, India

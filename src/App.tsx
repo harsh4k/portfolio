@@ -10,6 +10,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Journey from "./components/Journey";
+import GallerySection from "./components/GallerySection";
 import Contact from "./components/Contact";
 
 export default function App() {
@@ -75,6 +76,7 @@ export default function App() {
               <Projects />
               <Skills />
               <Journey />
+              <GallerySection />
               <Contact />
             </main>
           </motion.div>
