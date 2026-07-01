@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { ArrowUpRight, Copy, Github, Globe, Instagram, MapPin } from "lucide-react";
+import { ArrowUpRight, Copy, Github, Globe, Instagram, MapPin, MessageCircle } from "lucide-react";
 
 export default function Contact() {
   const [copied, setCopied] = useState<string | null>(null);
@@ -17,14 +17,21 @@ export default function Contact() {
       label: "LINKEDIN",
       icon: Globe,
       address: "Harshit Chauhan",
-      url: "https://www.linkedin.com/in/harshit-chauhan/",
+      url: "https://www.linkedin.com/in/harshit-chauhan-17a898364/",
       copy: false,
     },
     {
       label: "INSTAGRAM",
       icon: Instagram,
-      address: "@harshit_chauhan",
-      url: "https://www.instagram.com/harshit_chauhan/",
+      address: "@harshaintokay",
+      url: "https://www.instagram.com/harshaintokay/?hl=en",
+      copy: false,
+    },
+    {
+      label: "DISCORD",
+      icon: MessageCircle,
+      address: "@harshaintokay",
+      url: "",
       copy: true,
     },
   ];
