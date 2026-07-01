@@ -99,7 +99,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="grid gap-3 border-t border-[#EEE9DC]/10 pt-5 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid grid-cols-2 gap-3 border-t border-[#EEE9DC]/10 pt-5 sm:grid-cols-4"
         >
           {socialLinks.map((link) => {
             const Icon = link.icon;
@@ -110,10 +110,10 @@ export default function Contact() {
                 <button
                   key={link.label}
                   onClick={() => handleClick(link)}
-                  className="group rounded-[24px] border border-[#EEE9DC]/10 p-4 text-left transition-all hover:bg-[#EEE9DC] hover:text-[#161513]"
+                  className="group rounded-[24px] border border-[#EEE9DC]/10 p-3 text-left transition-all hover:bg-[#EEE9DC] hover:text-[#161513]"
                 >
-                  <div className="mb-12 flex items-center justify-between">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.18em] opacity-55">{link.label}</span>
+                  <div className="mb-6 flex items-center justify-between">
+                    <span className="font-mono text-[9px] uppercase tracking-[0.18em] opacity-55">{link.label}</span>
                     {isCopied ? (
                       <span className="flex items-center gap-1 font-mono text-[8px] uppercase tracking-[0.14em] text-[#C9FF3D]">
                         <Copy className="h-3 w-3" /> Copied
@@ -122,7 +122,7 @@ export default function Contact() {
                       <Copy className="h-4 w-4 text-[#F13A18] max-md:opacity-100 opacity-0 transition-opacity group-hover:opacity-100" />
                     )}
                   </div>
-                  <Icon className="h-6 w-6 opacity-75 transition-transform group-hover:scale-110" />
+                  <Icon className="h-5 w-5 opacity-75 transition-transform group-hover:scale-110" />
                 </button>
               );
             }
@@ -133,13 +133,13 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
                 key={link.label}
-                className="group rounded-[24px] border border-[#EEE9DC]/10 p-4 transition-all hover:bg-[#EEE9DC] hover:text-[#161513]"
+                className="group rounded-[24px] border border-[#EEE9DC]/10 p-3 transition-all hover:bg-[#EEE9DC] hover:text-[#161513]"
               >
-                <div className="mb-12 flex items-center justify-between">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.18em] opacity-55">{link.label}</span>
+                <div className="mb-6 flex items-center justify-between">
+                  <span className="font-mono text-[9px] uppercase tracking-[0.18em] opacity-55">{link.label}</span>
                   <ArrowUpRight className="h-4 w-4 text-[#F13A18] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </div>
-                <Icon className="h-6 w-6 opacity-75 transition-transform group-hover:scale-110" />
+                <Icon className="h-5 w-5 opacity-75 transition-transform group-hover:scale-110" />
               </a>
             );
           })}
